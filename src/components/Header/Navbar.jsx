@@ -37,6 +37,7 @@ const Navbar = ({ selectedProduct, price }) => {
 
 Navbar.propTypes = {
     selectedProduct: PropTypes.array.isRequired,
+    price: PropTypes.number.isRequired,
 };
 
 export default Navbar;

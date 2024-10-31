@@ -36,7 +36,8 @@ const Product = ({ product, handleSelectedProduct }) => {
 };
 
 Product.propTypes = {
-    product: PropTypes.object,
+    product: PropTypes.object.isRequired,
+    handleSelectedProduct: PropTypes.func.isRequired,
 };
 
 export default Product;

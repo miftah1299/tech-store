@@ -50,6 +50,8 @@ const CartContainer = ({
 
 CartContainer.propTypes = {
     handleIsActiveState: PropTypes.func.isRequired,
+    handleRemoveFromCart: PropTypes.func.isRequired,
+    selectedProduct: PropTypes.object.isRequired,
     cart: PropTypes.bool,
     isActive: PropTypes.shape({
         cart: PropTypes.bool.isRequired,
