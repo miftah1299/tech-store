@@ -3,7 +3,7 @@ import Cart from "../Cart/Cart";
 import About from "../About/About";
 import PropTypes from "prop-types";
 
-const CartContainer = ({ handleIsActiveState, isActive }) => {
+const CartContainer = ({ handleIsActiveState, isActive, selectedProduct }) => {
     return (
         <div>
             <h1>Cart Container</h1>
@@ -31,7 +31,11 @@ const CartContainer = ({ handleIsActiveState, isActive }) => {
                 </button>
             </div>
 
-            {isActive.cart ? <Cart></Cart> : <About></About>}
+            {isActive.cart ? (
+                <Cart selectedProduct={selectedProduct}></Cart>
+            ) : (
+                <About></About>
+            )}
         </div>
     );
 };

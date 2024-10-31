@@ -52,6 +52,7 @@ function App() {
                     handleSelectedProduct={handleSelectedProduct}
                 ></Allproducts>
                 <CartContainer
+                    selectedProduct={selectedProduct}
                     isActive={isActive}
                     handleIsActiveState={handleIsActiveState}
                 ></CartContainer>
