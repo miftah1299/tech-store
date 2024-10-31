@@ -10,28 +10,9 @@ This project is a simple React application that includes a responsive navbar, pr
 -   Add to Cart functionality
 -   Remove from Cart functionality
 
-## Installation
+## Deployment
 
-1. Clone the repository:
-    ```sh
-    git clone https://github.com/your-username/shopping-mall.git
-    ```
-2. Navigate to the project directory:
-    ```sh
-    cd shopping-mall
-    ```
-3. Install the dependencies:
-    ```sh
-    npm install
-    ```
-
-## Usage
-
-1. Start the development server:
-    ```sh
-    npm start
-    ```
-2. Open your browser and navigate to `http://localhost:3000` to see the application in action.
+The application is deployed on Surge. You can view it at [cheerful-toothpaste.surge.sh](http://cheerful-toothpaste.surge.sh).
 
 ## Technologies Used
 
