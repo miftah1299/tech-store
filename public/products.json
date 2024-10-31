@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "name": "Smartphone X200",
+        "image": "https://i.ibb.co.com/vmcyH3y/Global-X200-4-G-LTE-Android-Smartphone.webp",
+        "description": "A high-end smartphone with a stunning display and powerful processor.",
+        "price": 999.99,
+        "category": "Smartphones",
+        "isFeature": true
+    },
+    {
+        "id": 2,
+        "name": "Laptop Pro 15",
+        "image": "https://i.ibb.co.com/txZpDW2/Asus-Vivobook-Pro-15-Price-in-BD.jpg",
+        "description": "A sleek and powerful laptop designed for professionals.",
+        "price": 1499.99,
+        "category": "Laptops",
+        "isFeature": false
+    },
+    {
+        "id": 3,
+        "name": "Wireless Earbuds",
+        "image": "https://i.ibb.co.com/BnGLVzK/apple-airpods-pro-2-6x5k.jpg",
+        "description": "Compact and comfortable wireless earbuds with excellent sound quality.",
+        "price": 199.99,
+        "category": "Accessories",
+        "isFeature": true
+    },
+    {
+        "id": 4,
+        "name": "Smartwatch Series 5",
+        "image": "https://i.ibb.co.com/ygp2R7N/images-q-tbn-ANd9-Gc-R474-DCGL5e5-DM0pc-E7rugl-D5hs-GQhg-NBqn-SQ-s.jpg",
+        "description": "A stylish smartwatch with fitness tracking and notification features.",
+        "price": 299.99,
+        "category": "Wearables",
+        "isFeature": false
+    },
+    {
+        "id": 5,
+        "name": "4K Ultra HD TV",
+        "image": "https://i.ibb.co.com/74YJCpp/images-q-tbn-ANd9-Gc-Tuva-Aghc-Dfb-Byk0fn-YOk3-Km97cyuc6-Td-ILA-s.jpg",
+        "description": "A large 4K Ultra HD TV with vibrant colors and smart features.",
+        "price": 799.99,
+        "category": "Televisions",
+        "isFeature": true
+    }
+]
