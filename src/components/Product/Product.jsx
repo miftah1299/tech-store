@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
-const Product = ({ product }) => {
-    console.log(product);
+const Product = ({ product, handleSelectedProduct }) => {
+    // console.log(handleSelectedProduct);
 
     const { name, description, price, category, isFeature, image } = product;
 
@@ -24,7 +24,10 @@ const Product = ({ product }) => {
                 </span>
             </div>
             <div className="px-6 py-4">
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">
+                <button
+                    onClick={() => handleSelectedProduct(product)}
+                    className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded"
+                >
                     Add to Cart
                 </button>
             </div>
