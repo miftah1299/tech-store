@@ -12,6 +12,16 @@ function App() {
 
     const [selectedProduct, setSelectedProduct] = useState([]);
 
+    const [price, setPrice] = useState(500);
+
+    const handleIncreasePrice = (prod) => {
+        setPrice(price + prod.price);
+    };
+
+    const handleDecreasePrice = (prod) => {
+        setPrice(price - prod.price);
+    };
+
     const handleSelectedProduct = (product) => {
         // console.log(product);
 
@@ -20,12 +30,15 @@ function App() {
         if (isExist) {
             alert("Product is already in the cart");
         } else {
+            handleIncreasePrice(product);
             setSelectedProduct([...selectedProduct, product]);
         }
     };
     console.log(selectedProduct);
 
     const handleRemoveFromCart = (id) => {
+        handleDecreasePrice(selectedProduct.find((p) => p.id === id));
+
         const remainingProduct = selectedProduct.filter(
             (product) => product.id !== id
         );
@@ -50,9 +63,9 @@ function App() {
 
     return (
         <>
-            <Navbar selectedProduct={selectedProduct}></Navbar>
+            <Navbar price={price} selectedProduct={selectedProduct}></Navbar>
 
-            <div className="flex justify-around">
+            <div className="flex justify-around p-4 gap-4">
                 <Allproducts
                     handleSelectedProduct={handleSelectedProduct}
                 ></Allproducts>
