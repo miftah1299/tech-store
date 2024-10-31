@@ -9,18 +9,21 @@ const Allproducts = () => {
         fetch("./products.json")
             .then((res) => res.json())
             .then((data) => {
-                console.log(data);
-                setProducts(data.products);
+                setProducts(data);
             });
-
     }, []);
 
     return (
         <div>
             <h1>All Products</h1>
 
-            
-
+            {
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {products.map((product) => (
+                        <Product key={product.id} product={product}></Product>
+                    ))}
+                </div>
+            }
         </div>
     );
 };
