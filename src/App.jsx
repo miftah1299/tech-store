@@ -22,10 +22,15 @@ function App() {
         } else {
             setSelectedProduct([...selectedProduct, product]);
         }
-
-        setSelectedProduct([...selectedProduct, product]);
     };
     console.log(selectedProduct);
+
+    const handleRemoveFromCart = (id) => {
+        const remainingProduct = selectedProduct.filter(
+            (product) => product.id !== id
+        );
+        setSelectedProduct(remainingProduct);
+    };
 
     const handleIsActiveState = (status) => {
         if (status == "cart") {
@@ -53,6 +58,7 @@ function App() {
                 ></Allproducts>
                 <CartContainer
                     selectedProduct={selectedProduct}
+                    handleRemoveFromCart={handleRemoveFromCart}
                     isActive={isActive}
                     handleIsActiveState={handleIsActiveState}
                 ></CartContainer>

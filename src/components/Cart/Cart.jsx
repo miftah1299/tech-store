@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const Cart = ({ selectedProduct }) => {
+const Cart = ({ selectedProduct, handleRemoveFromCart }) => {
     return (
         <div>
             {selectedProduct.map((product) => (
@@ -19,7 +19,10 @@ const Cart = ({ selectedProduct }) => {
                         </div>
                     </div>
                     <div className="p-2">
-                        <button className="bg-red-500 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded">
+                        <button
+                            onClick={() => handleRemoveFromCart(product.id)}
+                            className="bg-red-500 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded"
+                        >
                             Remove
                         </button>
                     </div>
