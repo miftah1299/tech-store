@@ -3,7 +3,6 @@ import Cart from "../Cart/Cart";
 import About from "../About/About";
 import PropTypes from "prop-types";
 
-
 const CartContainer = ({ handleIsActiveState, isActive }) => {
     return (
         <div>
@@ -31,19 +30,18 @@ const CartContainer = ({ handleIsActiveState, isActive }) => {
                     About
                 </button>
             </div>
-                    {
-                        isActive.cart ? (
-                            <Cart></Cart>
-                        ) : (
-                            <About></About>
-                        )
-                    }
+
+            {isActive.cart ? <Cart></Cart> : <About></About>}
         </div>
     );
 };
 
 CartContainer.propTypes = {
+    handleIsActiveState: PropTypes.func.isRequired,
     cart: PropTypes.bool,
+    isActive: PropTypes.shape({
+        cart: PropTypes.bool.isRequired,
+    }).isRequired,
 };
 
 export default CartContainer;
