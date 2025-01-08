@@ -1,6 +1,6 @@
-# Shopping Mall
+# Tech Store
 
-This project is a simple React application that includes a responsive navbar, product listing, and a cart functionality using Tailwind CSS.
+This project is a React application that provides a seamless shopping experience with features like adding and removing products from the cart, and a clean, modern user interface.
 
 ## Features
 
@@ -12,7 +12,7 @@ This project is a simple React application that includes a responsive navbar, pr
 
 ## Deployment
 
-The application is deployed on Surge. You can view it at [cheerful-toothpaste.surge.sh](http://cheerful-toothpaste.surge.sh).
+The application is deployed on Surge. You can view it at [Tech Store](https://shopping-cart-website.surge.sh/).
 
 ## Technologies Used
 
